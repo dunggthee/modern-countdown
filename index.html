@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Modern Countdown — 01/02/2026</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="wrap" role="main">
+    <header class="card header-card">
+      <h1 class="title">Countdown — 01/02/2026</h1>
+      <p class="subtitle">Phong cách: TikTok (dark + neon) × Apple (sạch, spacing)</p>
+    </header>
+
+    <section class="card countdown-card" aria-live="polite" aria-label="Đếm ngược tới 01 tháng 2 năm 2026">
+      <div class="countdown-grid" id="countdown" role="group" aria-label="Thời gian còn lại">
+        <div class="time-segment">
+          <div class="num" id="days">00</div>
+          <div class="label">Ngày</div>
+        </div>
+        <div class="sep">:</div>
+        <div class="time-segment">
+          <div class="num" id="hours">00</div>
+          <div class="label">Giờ</div>
+        </div>
+        <div class="sep">:</div>
+        <div class="time-segment">
+          <div class="num" id="minutes">00</div>
+          <div class="label">Phút</div>
+        </div>
+        <div class="sep">:</div>
+        <div class="time-segment">
+          <div class="num" id="seconds">00</div>
+          <div class="label">Giây</div>
+        </div>
+      </div>
+      <div class="hint">Mục tiêu: 01/02/2026 00:00 (thời gian cục bộ)</div>
+    </section>
+
+    <section class="card action-card" aria-label="Hành động">
+      <div class="action-left">
+        <p class="action-text">Gửi tin nhắn nhanh tới Messenger:</p>
+        <div class="msg-preview" id="msgPreview" role="status" aria-live="polite"></div>
+      </div>
+      <div class="action-right">
+        <button id="openMessenger" class="btn primary" aria-label="Mở Messenger">Mở Messenger</button>
+        <button id="copyMsg" class="btn ghost" aria-label="Sao chép tin nhắn">Sao chép & Chuẩn bị</button>
+      </div>
+    </section>
+
+    <footer class="card footer-card">
+      <small>Thiết kế: tối, neon gradient (TikTok) + spacing & font sạch (Apple). Responsive.</small>
+    </footer>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
