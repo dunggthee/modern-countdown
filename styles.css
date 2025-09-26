@@ -15,7 +15,9 @@ body{
   background:
     radial-gradient(900px 500px at 10% 12%, rgba(0,230,255,0.03), transparent),
     radial-gradient(700px 420px at 92% 88%, rgba(255,45,85,0.03), transparent),
+    url('https://drive.google.com/uc?export=view&id=1W9jT7mAxsMeUL030VGJQ7IsYhTkYmnKl') center/cover no-repeat,
     var(--bg);
+  background-blend-mode: overlay;
   color:#fff;
   -webkit-font-smoothing:antialiased;
   display:flex;
@@ -133,8 +135,7 @@ body{
 
 /* toast */
 .toast{
-  position:fixed;right:18px;bottom:18px;padding:10px 14px;border-radius:10px;background:#0b1220;color:#e6fffa;box-shadow:0 8px 30px rgba(0,0,0,0.5);opacity:0;transform:translateY(10px);transition:all .25s ease;pointer-events:none;z-index:60;
-}
+  position:fixed;right:18px;bottom:18px;padding:10px 14px;border-radius:10px;background:#0b1220;color:#e6fffa;box-shadow:0 8px 30px rgba(0,0,0,0.5);opacity:0;transform:translateY(10px);transition[...}
 .toast.show{opacity:1;transform:translateY(0);pointer-events:auto}
 
 /* small screens */
